@@ -1,0 +1,78 @@
+#mainNav {
+    background-color: $body-bg;
+    display:flex;
+    justify-content: space-around;
+    padding:0 70px;
+    .navbar-toggler {
+      font-size: 12px;
+      right: 0;
+      padding: 13px;
+      text-transform: uppercase;
+      color: white;
+      border: 0;
+      background-color: $primary;
+    }
+    .navbar-brand {
+      color: $white;
+      font-family: 'Dancing Script', cursive;
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        color: darken($orange, 10%);
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 100%;
+          text-transform: uppercase;
+          font-weight: 700;
+          padding: 0.35em 0;
+          letter-spacing: 1px;
+          color: $white;
+          &.active,
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+  @media(min-width:992px) {
+    #mainNav {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+      -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+      transition: padding-top 0.3s, padding-bottom 0.3s;
+      border: none;
+      background-color: transparent;
+      .navbar-brand {
+        font-size: 2.8em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            padding: 1.1em 1em !important;
+          }
+        }
+      }
+      &.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-color: rgba(0,0,0,0.7);
+        .navbar-brand {
+          font-size: 1.75em;
+          padding: 12px 0;
+        }
+      }
+    }
+  }
+
+.dropdown-menu{
+  background-color: $body-bg !important;
+}

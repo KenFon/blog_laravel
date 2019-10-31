@@ -1,0 +1,33 @@
+.btn_profil{
+    font-size: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all .2s ease-in-out;
+    background-color: $body-bg;
+    color: rgba(0,0,0,0.9);
+    border:0px;
+    width: 5vmax;
+    height: 3vmax;
+    margin-right: 1vmax;
+}
+
+.btn_profil:hover{
+    box-shadow: 1px 3px 15px rgba(0,0,0,.15);
+    background: $orange;
+    color:#fff;
+    text-decoration: none;
+}
+
+.groupBtnProfil{
+    display:flex;
+    flex-direction: row;
+}
+
+.listArticleProfil{
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+}

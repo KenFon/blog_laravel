@@ -1,0 +1,66 @@
+header.masthead {
+    text-align: center;
+    color: $white;
+    background-image: url('public/img/back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom 70%;
+    background-size: cover;
+    height: 75%;
+    position:relative;
+    .intro-text {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      z-index: 5;
+      position: relative;
+      .intro-lead-in {
+        display : flex;
+        justify-content: center;
+        font-style: italic;
+        line-height: 22px;
+        margin-bottom: 25px;
+          p{
+            width: 58%;
+            font-size: 28px;
+          }
+      }
+
+      .intro-heading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .masthead::before{
+    content:"";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  @media(min-width:768px) {
+    header.masthead {
+      .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+        .intro-lead-in {
+          font-size: 40px;
+          font-style: italic;
+          line-height: 40px;
+          margin-bottom: 25px;
+        }
+        .intro-heading {
+          font-size: 75px;
+          font-weight: 700;
+          line-height: 75px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  
